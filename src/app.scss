@@ -7,11 +7,15 @@
     // background-color: lightsalmon;
     position: relative;
     top: 80px;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
     scroll-snap-type: y mandatory;
     scrollbar-width: none;
+    transition: all 5s ease;
     &::-webkit-scrollbar {
       display:none;
+      scroll-behavior:smooth;
+      scroll-snap-type: y mandatory;
+      scrollbar-width: none;
     }
 
     > * {

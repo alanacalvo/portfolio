@@ -1,6 +1,7 @@
 import './app.scss'
 import NavBar from './Components/NavBar/NavBar';
 import Intro from './Components/Intro/Intro';
+import About from './Components/About/About';
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects.jsx'
 import Portfolio from './Components/Portfolio/Portfolio';
@@ -16,6 +17,7 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
+        <About />
         <Skills />
         <Projects />
         {/* <Portfolio /> */}

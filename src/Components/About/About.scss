@@ -1,0 +1,41 @@
+@import '../../global.scss';
+
+* {
+  border: gold 1px solid;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $darkpurple;
+  padding: 60px;
+  color: $beige;
+
+
+  .left {
+    height: 30%;
+    width: 40%;
+    padding: 25px;
+
+    h1 {
+      font-size: 60px;
+    }
+  }
+
+  .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -170px;
+
+
+    p {
+      font-size: 20px;
+      text-align: center;
+    }
+
+  }
+}
