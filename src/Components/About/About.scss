@@ -1,40 +1,48 @@
 @import '../../global.scss';
 
-* {
-  border: gold 1px solid;
-}
+// * {
+//   border: gold 1px solid;
+// }
 
 .about {
   display: flex;
   align-items: center;
   justify-content: center;
+
   background-color: $darkpurple;
   padding: 60px;
   color: $beige;
 
 
   .left {
-    height: 30%;
+    height: 50%;
     width: 40%;
     padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 
     h1 {
+      display: flex;
       font-size: 60px;
+      padding-right: 80px;
     }
   }
 
   .right {
+    height: 50%;
     width: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
     flex-direction: column;
-    margin-top: -170px;
 
 
     p {
       font-size: 20px;
-      text-align: center;
+      // text-align: center;
+      padding-top: 5px;
+      padding-bottom: 30px;
     }
 
   }

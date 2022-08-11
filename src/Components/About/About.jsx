@@ -4,15 +4,15 @@ function About() {
   return (
     <div className='about'>
       <div className="left">
-        <h1>About Me</h1>
+        <h1>About</h1>
 
       </div>
       <div className="right">
 
 
-          <p>Ever since I can remember, I had an interest in storytelling, creativity, and the art of communication. I've searched for ways in which I can express my love for it, and discovered I want to channel it to help people. That path led me to web development.</p>
-
-          <p>As a developer, I enjoy problem-solving, the look and feel of an application, and how it’s working. My degree in Communications and time with General Assembly allows me to work efficiently in collaborative settings, and the ability to bring an audience’s perspective to coding. I care about the impact of an application and what it can do for its users.</p>
+          <p>Hi, my names Alana and I build things for the web. It took me a long time to get here though. I could never figure out what it was that I wanted to do in life. I spent my time with my kids, and doing various jobs that I enjoyed, and some that I did not. It wasn't until there were over three people that I knew as software engineers, that I decided to check it out and see if it was for me too. Turns out it was, and now here I am. I am thrilled to be a part of the ever growing tech field.</p>
+            
+            <p>I currently work as a freelance developer, and I am a proud graduate of General Assembly's Sofwate Engineering Immersive Boot Camp. ADD LINK HERE ? </p>
 
           <p>In my free time, you can find me hanging out with family and friends, binge watching movie and shows, or exploring a new city.</p>
         </div>
