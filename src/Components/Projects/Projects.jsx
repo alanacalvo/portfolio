@@ -10,7 +10,8 @@ function Projects() {
       icon: '',
       title: '2048',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio esse vero aperiam sunt? Deserunt.',
-      img: '',
+      img: 'assets/2048.png',
+      link: 'https://alanacalvo.github.io/project1/'
     },
     {
       id: '2',
@@ -18,6 +19,7 @@ function Projects() {
       title: 'GamerList',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio esse vero aperiam sunt? Deserunt.',
       img: 'assets/GamerList.png',
+      link: ''
     },
     {
       id: '3',
@@ -25,6 +27,7 @@ function Projects() {
       title: 'JellyJam',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio esse vero aperiam sunt? Deserunt.',
       img: 'assets/JellyJam.png',
+      link: 'https://jellyjam.netlify.app/'
     },
     {
       id: '4',
@@ -32,6 +35,7 @@ function Projects() {
       title: 'FocusUp',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio esse vero aperiam sunt? Deserunt.',
       img: 'assets/FocusUp.png',
+      link: 'https://focusup.netlify.app'
     },
   ]
 
@@ -43,6 +47,7 @@ function Projects() {
 
   return (
     <div className='projects' id='projects'>
+      <h1>Projects</h1>
       <div className="slider" 
           style={{transform:`translateX(-${currentSlide *100}vw)`}}
         >
@@ -57,6 +62,7 @@ function Projects() {
                 </div>
                 <h2>{d.title}</h2>
                 <p>{d.desc}</p>
+                <a href={d.link} target='_blank'>Live Demo</a>
               <span>Projects</span>
               </div>
             </div>

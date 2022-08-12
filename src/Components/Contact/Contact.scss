@@ -3,5 +3,22 @@
 .contact {
   background-color: lightblue;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  .container {
+    width: 35%;
+    
 
+    h1 {
+      font-size: 70px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+  }
 }

@@ -1,49 +1,27 @@
 @import '../../global.scss';
 
-// * {
-//   border: gold 1px solid;
-// }
-
 .about {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  text-align: center;
   background-color: $darkpurple;
-  padding: 60px;
   color: $beige;
 
-
-  .left {
-    height: 50%;
-    width: 40%;
-    padding: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  .container {
+    width: 45%;
 
     h1 {
-      display: flex;
-      font-size: 60px;
-      padding-right: 80px;
+      font-size: 70px;
+
     }
-  }
-
-  .right {
-    height: 50%;
-    width: 50%;
-    display: flex;
-    // align-items: center;
-    // justify-content: center;
-    flex-direction: column;
-
 
     p {
-      font-size: 20px;
-      // text-align: center;
-      padding-top: 5px;
-      padding-bottom: 30px;
+      font-size: 25px;
+      padding: 10px;
     }
-
   }
+
+
 }

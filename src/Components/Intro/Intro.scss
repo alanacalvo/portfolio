@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .intro {
-  background-color: $steelblue;
+  background-color: white;
   display: flex;
 
   .left {
@@ -11,7 +11,7 @@
     .imgContainer {
       width: 700px;
       height: 700px;
-      background-color: white;
+      background-color: $steelblue;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
@@ -27,9 +27,10 @@
   
   .right {
     flex: 0.5;
-    color: white;
+    color: $steelblue;
     position: relative;
     overflow: hidden;
+    // text-align: right;
     
     .wrapper {
       width: 70%;
@@ -38,25 +39,26 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
+      font-size: 25px;
 
       h1 {
-        font-size: 60px;
+        font-size: 100px;
         margin: 10px  0;
-        h2 {
-          font-size: 35px;
-        }
+      }
+
         h3 {
-          font-size: 30px;
+          font-size: 45px;
+          padding: 10px;
 
           span {
             font-size: inherit;
             color: $steelblue;
-
+            
           }
-
+          
           .ityped-cursor {
             animation: blink 1s infinite;
-
+            
           }
           @keyframes blink {
             50% {
@@ -67,16 +69,18 @@
             }
           }
         }
-      }
+
+        
+      
       a {
         position: absolute;
         bottom: 10px;
-
+        
         img {
           animation: arrowBlink 2s infinite;
           // insert arrow V img
         }
-        @keyframes arrowBlunk {
+        @keyframes arrowBlink {
           100% {
             opacity: 0;
           }

@@ -3,11 +3,8 @@ import './Skills.scss'
 function Skills() {
   return (
     <div className='skills' id='skills'>
-        <div className="left">
           <h1>Skills</h1>
           <p>Here are some of the technologies I learned while in General Assembly's Immersive Boot Camp, and a few others that I learned on my own.</p>
-        </div>
-        <div className="right">
           <div className="imgContainer">
             <img src="assets/javascript.png" alt="" />
             <img src="assets/react.png" alt="" />
@@ -23,7 +20,7 @@ function Skills() {
             <img src="assets/css3.png" alt="" />
         </div>
       </div>
-    </div>
+
   )
 }
 

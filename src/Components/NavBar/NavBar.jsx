@@ -1,5 +1,6 @@
 import './NavBar.scss'
 import TerminalIcon from '@mui/icons-material/Terminal';
+import Pdf from './Documents/Alana Calvo Resume.pdf'
 
 function NavBar({ menuOpen, setMenuOpen }) {
   return (
@@ -17,6 +18,12 @@ function NavBar({ menuOpen, setMenuOpen }) {
           <div className='itemContainer'>
           <TerminalIcon className='icon'/>
             <span>3863155385</span>
+          </div>
+          <div className='itemContainer'>
+          <TerminalIcon className='icon'/>
+            <span>
+              <a href={Pdf} target='_blank'>Resume</a>
+            </span>
           </div>
         </div>
         <div className="right">
