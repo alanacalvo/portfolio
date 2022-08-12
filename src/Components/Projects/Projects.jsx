@@ -9,7 +9,7 @@ function Projects() {
       id: '1',
       icon: '',
       title: '2048',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio esse vero aperiam sunt? Deserunt.',
+      desc: 'Recreation of the web game 2048.',
       img: 'assets/2048.png',
       link: 'https://alanacalvo.github.io/project1/'
     },
@@ -17,7 +17,7 @@ function Projects() {
       id: '2',
       icon: '',
       title: 'GamerList',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio esse vero aperiam sunt? Deserunt.',
+      desc: 'A video game database in which the user can like, add, and delete video games from their wishlist.',
       img: 'assets/GamerList.png',
       link: ''
     },
@@ -25,7 +25,7 @@ function Projects() {
       id: '3',
       icon: '',
       title: 'JellyJam',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio esse vero aperiam sunt? Deserunt.',
+      desc: 'A group project using the Spotify API to recreate the Spotify Web Player.',
       img: 'assets/JellyJam.png',
       link: 'https://jellyjam.netlify.app/'
     },
@@ -33,7 +33,7 @@ function Projects() {
       id: '4',
       icon: '',
       title: 'FocusUp',
-      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio esse vero aperiam sunt? Deserunt.',
+      desc: 'A web app where users can create and schedule timed focus sessions and keep track of factors that helped them be more productive.',
       img: 'assets/FocusUp.png',
       link: 'https://focusup.netlify.app'
     },
@@ -47,7 +47,11 @@ function Projects() {
 
   return (
     <div className='projects' id='projects'>
+      <div className="title">
+
       <h1>Projects</h1>
+      </div>
+
       <div className="slider" 
           style={{transform:`translateX(-${currentSlide *100}vw)`}}
         >
@@ -57,13 +61,12 @@ function Projects() {
           <div className="item">
             <div className="left">
               <div className="leftContainer">
-                <div className="imgContainer">
+                {/* <div className="imgContainer">
                   <img src="assets/javascript.png" alt="" />
-                </div>
+                </div> */}
                 <h2>{d.title}</h2>
                 <p>{d.desc}</p>
                 <a href={d.link} target='_blank'>Live Demo</a>
-              <span>Projects</span>
               </div>
             </div>
             <div className="right">

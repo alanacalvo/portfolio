@@ -1,15 +1,20 @@
 @import '../../global.scss';
 
 .projects {
-  background-color: purple;
+  background-color: $steelblue;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 
-  h1 {
-    font-size: 70px;
-    color:white;
+  .title {
+    position: absolute;
+    top: 10%;
+
+    h1{
+      font-size: 70px;
+      color:white;
+    }
   }
 
   .arrow {
@@ -18,13 +23,13 @@
 
     &.left {
       left: 100px;
-      transform: rotate(-90deg);
+      transform: rotate(90deg);
       cursor: pointer;
     }
     
     &.right {
       right: 100px;
-      transform: rotate(90deg);
+      transform: rotate(-90deg);
       cursor: pointer;
     }
   }
@@ -53,7 +58,7 @@
 
         .left {
           flex: 4;
-          height:80%;
+          height:75%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -64,6 +69,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            padding-left: 20px;
+
+
 
             .imgContainer {
               width: 100px;
@@ -78,32 +86,35 @@
                 width: 25px;
               }
             }
+
             h2 {
+              font-size: 50px;
+            }
+
+            p {
               font-size: 20px;
             }
-            p {
-              font-size: 13px;
-            }
+
             span {
               font-size:13px;
               font-weight: 600;
               text-decoration: underline;
               cursor: pointer;
             }
-          }
+          } 
         }
         .right {
-          flex: 8;
+          flex: 7;
           height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
+          padding-right: 20px;;
 
           img {
-            width: 450px;
-            height: 275px;
+            width: 475px;
+            height: 300px;
             border-radius: 5px;
-            // transform: rotate(-10deg);
           }
         }
       }

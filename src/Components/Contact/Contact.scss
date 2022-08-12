@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .contact {
-  background-color: lightblue;
+  background-color: $lightpurple;
   color: white;
   display: flex;
   flex-direction: column;
@@ -12,13 +12,16 @@
   .container {
     width: 35%;
     
-
     h1 {
       font-size: 70px;
     }
 
     h3 {
       font-size: 25px;
+    }
+    
+    a {
+      color: white;
     }
   }
 }

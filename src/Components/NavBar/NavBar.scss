@@ -2,14 +2,14 @@
 
 .navbar {
   width: 100%;
-  height: 80px;
-  background-color: $steelblue;
-  color: white;
+  height: 85px;
+  background-color: white;
+  color: $steelblue;
   position: fixed;
   top: 0;
   z-index: 3;
   transition: all 1s ease;
-  overflow: hidden;
+  overflow: hidden; 
 
 
 
@@ -44,7 +44,7 @@
       .itemContainer {
         display: flex;
         align-items: center;
-        padding: 10px;
+        padding: 2.5px;
         margin-right: 25px;
 
         // @include mobile{
@@ -54,7 +54,6 @@
         .icon {
           font-size: 20px;
           margin-right: 5px;
-
         }
 
         span {
@@ -62,7 +61,7 @@
           font-weight: 500;
 
           a {
-            color: white;
+            color: $steelblue;
             text-decoration: none;
           }
         }
@@ -70,7 +69,7 @@
         &:hover {
           font-size: 22px;
           border-radius: 5px;
-          box-shadow: 0px 0px 5px #fff;
+          box-shadow: 0px 0px 10px $steelblue;
           transition: box-shadow 1s ease-in-out;
           span, a, .icon {
             
@@ -93,7 +92,7 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: white;
+          background-color: $steelblue;
           transform-origin: left;
           transition: all 2s ease;
         }
@@ -105,12 +104,16 @@
     background-color: $steelblue;
     color: white;
 
+    .itemContainer, .icon {
+      display: none;
+    }
     .hamburger {
+
       span {
         &:first-child {
           background-color: white;
           transform: rotate(45deg);
-        }
+        } 
 
         &:nth-child(2) {
           opacity: 0;
@@ -121,6 +124,11 @@
           transform: rotate(-45deg);
         }
       }
+    }
+  }
+  &:active {
+    a {
+      color: $steelblue;
     }
   }
 }
