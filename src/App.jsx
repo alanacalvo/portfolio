@@ -1,5 +1,6 @@
 import './app.scss'
 import NavBar from './Components/NavBar/NavBar';
+import SideLinks from './Components/SideLinks/SideLinks';
 import Intro from './Components/Intro/Intro';
 import About from './Components/About/About';
 import Skills from './Components/Skills/Skills';
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="app">
       <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <SideLinks />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />

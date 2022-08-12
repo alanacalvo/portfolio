@@ -6,14 +6,14 @@ function Intro() {
 
   const textRef = useRef();
 
-  useEffect(() => { // running twice at once.
+  useEffect(() => {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
       strings: ['Engineer', 'Developer', 'Designer']
     })
-  }, [])
+  }, []) 
 
   return (
     <div className='intro' id='intro'>
@@ -28,7 +28,7 @@ function Intro() {
             Hi there!
           </h2>
           <h1>I'm Alana Calvo</h1>
-          <h3>Freelance <span ref={textRef}></span></h3>
+          <h3>Software<span ref={textRef}></span></h3>
           <p>I am a creative, driven, and energetic software engineer that is passionate about creating impactful solutions that help bring the change we need to see in the world.</p>
         </div>
         <a href='#skills'>V</a>

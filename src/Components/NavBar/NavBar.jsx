@@ -1,5 +1,8 @@
 import './NavBar.scss'
 import TerminalIcon from '@mui/icons-material/Terminal';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
+import DescriptionIcon from '@mui/icons-material/Description';
 import Pdf from './Documents/Alana Calvo Resume.pdf'
 
 function NavBar({ menuOpen, setMenuOpen }) {
@@ -12,17 +15,25 @@ function NavBar({ menuOpen, setMenuOpen }) {
           ]
           </a>
           <div className='itemContainer'>
-          <TerminalIcon className='icon'/>
-            <span>alanapcalvo@gmail.com</span>
-          </div>
-          <div className='itemContainer'>
-          <TerminalIcon className='icon'/>
-            <span>3863155385</span>
-          </div>
-          <div className='itemContainer'>
-          <TerminalIcon className='icon'/>
+          <MailOutlineIcon className='icon'/>
             <span>
-              <a href={Pdf} target='_blank'>Resume</a>
+              <a href="mailto:alanapcalvo@gmail.com">
+                alanapcalvo@gmail.com
+              </a>
+            </span>
+          </div>
+          <div className='itemContainer'>
+          <PermPhoneMsgIcon className='icon'/>
+            <span>
+              <a href="tel:386-315-5385">
+                386-315-5385
+                </a>
+            </span>
+          </div>
+          <div className='itemContainer'>
+          <DescriptionIcon className='icon'/>
+            <span>
+              <a href={Pdf} target='_blank' rel="noreferrer">Resume</a>
             </span>
           </div>
         </div>

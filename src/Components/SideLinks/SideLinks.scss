@@ -1,0 +1,59 @@
+@import '../../global.scss';
+
+.sideLinks {
+  width: 5%;
+  height: 100vh;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  transition: all 1s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25vh;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .icons {
+      display: flex;
+      height: 87px;
+      flex-direction: column;
+      z-index: 1;
+      justify-content: space-between;
+
+
+      a {
+        color: white;
+
+        i {
+          font-size: 35px;
+    
+        }
+      }
+    }
+
+    .hr {
+      width: 275px;
+      rotate: 90deg;
+      
+      hr {
+        width: 100%;
+        margin: 0 auto;
+        background-color: white;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, #ccc, white, #ccc);
+      }
+
+    }
+
+
+  }
+}
