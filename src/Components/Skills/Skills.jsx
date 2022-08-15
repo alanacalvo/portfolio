@@ -3,9 +3,11 @@ import './Skills.scss'
 function Skills() {
   return (
     <div className='skills' id='skills'>
+      <div className="text">
           <h1>Skills</h1>
+          {/* <hr></hr> */}
           <p>Here are some of the technologies I learned while in General Assembly's Immersive Boot Camp, and a few others that I learned on my own.</p>
-          <hr></hr>
+      </div>
           <div className="iconContainer">
           <i class="devicon-html5-plain colored"></i>
           <i class="devicon-javascript-plain colored"></i>

@@ -7,15 +7,25 @@
   justify-content: center;
   position: relative;
 
+  @include mobile {
+    padding-top: 35px;
+  }
+
   .title {
     position: absolute;
     top: 10%;
 
-    h1{
+    h1 {
       font-size: 70px;
-      color:white;
+      color: white;
+
+      @include mobile {
+        display: none;
+      }
     }
   }
+
+
 
   .arrow {
     height: 50px;
@@ -26,11 +36,15 @@
       transform: rotate(90deg);
       cursor: pointer;
     }
-    
+
     &.right {
       right: 100px;
       transform: rotate(-90deg);
       cursor: pointer;
+    }
+
+    @include mobile {
+      display: none;
     }
   }
 
@@ -38,8 +52,14 @@
     height: 450px;
     display: flex;
     position: absolute;
-    left:0;
+    left: 0;
     transition: all 1s ease-out;
+
+    @include mobile {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+    }
 
     .container {
       width: 100vw;
@@ -47,22 +67,35 @@
       align-items: center;
       justify-content: center;
 
+
       .item {
         width: 800px;
         height: 100%;
         background-color: white;
+        color: $steelblue;
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
 
+        @include mobile {
+          width: 90%;
+          height: 170px;
+          margin: 5px;
+        }
+
         .left {
           flex: 4;
-          height:75%;
+          height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
-          
+
+          @include mobile {
+            flex: 4.5;
+            overflow: auto;
+          }
+
           .leftContainer {
             width: 90%;
             height: 90%;
@@ -71,13 +104,14 @@
             justify-content: space-between;
             padding-left: 20px;
 
-
+            @include mobile {
+              padding-left: 2px;
+            }
 
             .imgContainer {
               width: 100px;
               height: 100px;
               border-radius: 50%;
-              background-color: $cyan;
               display: flex;
               justify-content: center;
               align-items: center;
@@ -89,36 +123,88 @@
 
             h2 {
               font-size: 50px;
+              
+
+              @include mobile {
+                font-size: 25px;
+                padding-top: 0;
+                overflow: hidden;
+                padding-bottom: 5px;
+              }
             }
 
             p {
               font-size: 20px;
+              
+
+              @include mobile {
+                font-size: 15px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                margin-right: 0;
+              }
             }
 
-            span {
-              font-size:13px;
-              font-weight: 600;
-              text-decoration: underline;
-              cursor: pointer;
+            .links {
+              a {
+                font-size: 13px;
+                cursor: pointer;
+              }
+
+              @include mobile {
+                overflow: hidden;
+                margin-top: 2px;
+              }
             }
-          } 
+          }
         }
+
         .right {
           flex: 7;
           height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
-          padding-right: 20px;;
+          padding-right: 20px;
+
+          @include mobile {
+            padding-right: 0;
+            padding-left: 0;
+            margin-left: 0;
+            flex: 6
+          }
 
           img {
             width: 475px;
             height: 300px;
             border-radius: 5px;
+
+            @include mobile {
+              height: 125px;
+              width: 175px;
+              padding-right: 0;
+            }
           }
         }
       }
     }
-
   }
 }
+
+// hr {
+//   overflow: visible;
+//   height: 30px;
+//   border: white solid;
+//   border-width: 1px 0 0 0;
+//   border-radius: 20px;
+// }
+
+// hr:before {
+//   display: block;
+//   content: "";
+//   height: 30px;
+//   margin-top: -31px;
+//   border: white solid;
+//   border-width: 0 0 1px 0;
+//   border-radius: 20px;
+// }

@@ -31,7 +31,6 @@ function Intro() {
           <h3>Software <span ref={textRef}></span></h3>
           <p>I am a creative, driven, and energetic software engineer that is passionate about creating impactful solutions that help bring the change we need to see in the world.</p>
         </div>
-        <a href='#skills'>V</a>
       </div>
     </div>
   )

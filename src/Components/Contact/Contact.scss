@@ -8,18 +8,52 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  
+
+
+
+  hr {
+    overflow: visible;
+    height: 30px;
+    border: white solid;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+  }
+
+  hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border: white solid;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+  }
+
   .container {
     width: 35%;
-    
-    h1 {
-      font-size: 70px;
+
+    @include mobile {
+      width: 90%;
+      overflow: hidden;
     }
 
-    h3 {
-      font-size: 25px;
+    h1 {
+      font-size: 70px;
+      padding-bottom: 10px;
+      
+      @include mobile {
+        font-size: 40px;
+      }
     }
-    
+
+    p {
+      font-size: 25px;
+
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+
     a {
       color: white;
     }

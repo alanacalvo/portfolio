@@ -1,5 +1,15 @@
 $steelblue: #AFC1D6;
+$greyblue: #8598ae;
 $lightpurple: #AB92BF;
 $darkpurple: #655A7C;
 $cyan: #CEF9F2;
 $beige: #C8B7AE;
+
+
+$width: 776px;
+
+@mixin mobile {
+  @media (max-width: #{$width}){
+    @content
+  }
+}

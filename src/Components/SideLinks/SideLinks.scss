@@ -13,6 +13,10 @@
   flex-direction: column;
   justify-content: flex-end;
 
+  @include mobile {
+    display: none;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
