@@ -5,7 +5,7 @@ function Skills() {
     <div className='skills' id='skills'>
       <div className="text">
           <h1>Skills</h1>
-          {/* <hr></hr> */}
+          <hr></hr>
           <p>Here are some of the technologies I learned while in General Assembly's Immersive Boot Camp, and a few others that I learned on my own.</p>
       </div>
           <div className="iconContainer">

@@ -9,6 +9,7 @@ import Portfolio from './Components/Portfolio/Portfolio';
 import Contact from './Components/Contact/Contact';
 import Menu from './Components/Menu/Menu';
 import { useState } from 'react'
+import Footer from './Components/Footer/Footer';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,6 +26,7 @@ function App() {
         {/* <Portfolio /> */}
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 }

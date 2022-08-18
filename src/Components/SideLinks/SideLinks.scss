@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .sideLinks {
-  width: 5%;
+  width: 4%;
   height: 100vh;
   color: white;
   position: fixed;
@@ -12,52 +12,73 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
+  
   @include mobile {
     display: none;
   }
-
+  
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 25vh;
-    justify-content: space-between;
+    height: 11vh;
+    justify-content: space-around;
     overflow: hidden;
-
+    
     .icons {
       display: flex;
       height: 87px;
       flex-direction: column;
       z-index: 1;
       justify-content: space-between;
-
-
+      
       a {
         color: white;
-
+        text-decoration: none;
+        
         i {
           font-size: 35px;
-    
+          
         }
       }
     }
-
     .hr {
       width: 275px;
       rotate: 90deg;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      // border: 1px gold solid;
+      color: white;
+
       
       hr {
         width: 100%;
         margin: 0 auto;
         background-color: white;
         border: 0;
-        height: 1px;
+        height: 3px;
         background-image: linear-gradient(to right, #ccc, white, #ccc);
+        z-index: 3;
       }
-
     }
 
-
+    // hr {
+    //   overflow: visible;
+    //   height: 30px;
+    //   border: white solid;
+    //   border-width: 1px 0 0 0;
+    //   border-radius: 20px;
+    // }
+  
+    // hr:before {
+    //   display: block;
+    //   content: "";
+    //   height: 30px;
+    //   margin-top: -31px;
+    //   border: white solid;
+    //   border-width: 0 0 1px 0;
+    //   border-radius: 20px;
+    // } }
   }
 }

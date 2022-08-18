@@ -44,53 +44,52 @@ function Projects() {
   ]
 
   const handleClick = (way) => {
-    way === 'left' 
-    ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2) 
-    : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
+    way === 'left'
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+      : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   }
 
   return (
     <div className='projects' id='projects'>
       <div className="title">
-
-      <h1>Projects</h1>
+        <h1>Projects</h1>
+        <hr></hr>
       </div>
-      {/* <hr></hr> */}
 
-      <div className="slider" 
-          style={{transform:`translateX(-${currentSlide *100}vw)`}}
-        >
+      <div className="slider"
+        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+      >
         {data.map((d) => (
 
           <div className="container">
-          <div className="item">
-            <div className="left">
-              <div className="leftContainer">
-                {/* <div className="imgContainer">
+            <div className="item">
+              <div className="left">
+                <div className="leftContainer">
+                  {/* <div className="imgContainer">
                   <img src="assets/javascript.png" alt="" />
                 </div> */}
-                <h2>{d.title}</h2>
-                <p>{d.desc}</p>
-                <div className="links">
-                  <a href={d.liveLink} target='_blank'>Live Demo</a> | <a href={d.githubLink} target='_blank'>Github</a>
+                  <h2>{d.title}</h2>
+                  <p>{d.desc}</p>
+                  <div className="links">
+                    <a href={d.liveLink} target='_blank'>Live Demo</a> | <a href={d.githubLink} target='_blank'>Github</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="right">
-              <img src={d.img} alt="" />
+              <div className="right">
+                <img src={d.img} alt="" />
+              </div>
             </div>
           </div>
-        </div>
         ))
         }
       </div>
-      <img src="assets/arrow.png" 
-      className='arrow left' alt="" 
-      onClick={()=>handleClick('left')}/>
+      <img src="assets/arrow.png"
+        className='arrow left' alt=""
+        onClick={() => handleClick('left')} />
 
-      <img src="assets/arrow.png" 
-      className='arrow right' alt="" 
-      onClick={()=>handleClick('right')}/>
+      <img src="assets/arrow.png"
+        className='arrow right' alt=""
+        onClick={() => handleClick('right')} />
     </div>
   )
 }
