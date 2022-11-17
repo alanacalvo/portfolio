@@ -38,7 +38,7 @@ function Projects() {
       title: 'FocusUp',
       desc: 'A web app where users can create and schedule timed focus sessions and keep track of factors that helped them be more productive.',
       img: 'assets/FocusUp.png',
-      liveLink: 'https://focusup.netlify.app',
+      liveLink: 'https://main--focusup.netlify.app',
       githubLink: 'https://github.com/alanacalvo/focusup-client'
     },
   ]
