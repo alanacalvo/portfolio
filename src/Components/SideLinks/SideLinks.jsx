@@ -1,4 +1,4 @@
-import './SideLinks.scss'
+import "./SideLinks.scss";
 
 function SideLinks() {
   return (
@@ -12,12 +12,12 @@ function SideLinks() {
             <i class="devicon-linkedin-plain"></i>
           </a>
         </div>
-        <div className="hr">
+        {/* <div className="hr">
           <hr></hr>
-        </div>
+        </div> */}
       </div>
     </div>
-  )
+  );
 }
 
-export default SideLinks
+export default SideLinks;

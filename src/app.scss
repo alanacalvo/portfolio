@@ -10,14 +10,14 @@
     // background-color: lightsalmon;
     position: relative;
     top: 80px;
-    scroll-behavior:smooth;
-    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    // scroll-snap-type: y mandatory;
     scrollbar-width: none;
     transition: all 5s ease;
-    
+
     &::-webkit-scrollbar {
-      display:none;
-      scroll-behavior:smooth;
+      display: none;
+      scroll-behavior: smooth;
       scroll-snap-type: y mandatory;
       scrollbar-width: none;
     }
